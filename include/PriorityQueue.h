@@ -33,7 +33,7 @@ public:
             exit(1);
 
         int ind = GetMaxPriority();
-        T temp = items[ind];
+        T temp = items[ind].data;
         for (int i = ind; i < count; i++) {
             items[i] = items[i + 1];
         }
@@ -50,7 +50,7 @@ public:
 
         for (int i = 0; i <= count; i++) {
             if (highestPriority == items[i].priority && priority > -1
-                && items[priority].value < items[i].data) {
+                && items[priority].data < items[i].data) {
                 highestPriority = items[i].priority;
                 priority = i;
             } else if (highestPriority < items[i].priority) {
@@ -64,7 +64,7 @@ public:
     T peek() {
         if (isEmpty())
             exit(1);
-        return items[GetMaxPriority()];
+        return items[GetMaxPriority()].data;
     }
 
     bool isEmpty() {

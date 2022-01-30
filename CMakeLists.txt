@@ -11,3 +11,5 @@ add_executable(linkedLinearQueue src/linked_linear_queue_driver.cpp include/lib.
 add_executable(linkedCircularQueue src/linked_circular_queue_driver.cpp include/lib.h include/CircularQueue.h)
 add_executable(priorityQueue src/priority_queue_driver.cpp include/lib.h include/PriorityQueue.h)
 add_executable(doublyLinkedList src/doubly_linked_list_driver.cpp include/lib.h include/DoublyLinkedList.h)
+
+add_executable(binaryTree src/binary_tree_driver.cpp include/lib.h include/BinaryTree.h)

@@ -7,9 +7,9 @@ template<typename T>
 class CircularQueue{
     int front, rear;
     T *dataArray;
-    unsigned size;
+    unsigned size{};
 public:
-    CircularQueue(const unsigned &size = 10){
+    explicit CircularQueue(const unsigned &size = 10){
         front = rear = -1;
         this->size = size;
         this->dataArray = new T[size];

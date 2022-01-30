@@ -19,6 +19,14 @@ struct DllNode {
 };
 
 template<typename T>
+struct bTreeNode {
+    T data;
+    bTreeNode *left;
+    bTreeNode *right;
+    explicit bTreeNode(T data) : data(data), right(NULL), left(NULL) {}
+};
+
+template<typename T>
 struct pqItem{
     T data;
     int priority;
