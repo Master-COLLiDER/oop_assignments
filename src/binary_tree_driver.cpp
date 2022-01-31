@@ -11,6 +11,8 @@ int main() {
     cin >> value;
     tree.Insert(value);
     do {
+        cout << "\nRoll No. : CSM21002";
+        cout << "\n:::Binary Tree Menu:::";
         cout << "\n1. Insert";
         cout << "\n2. Preorder Depth First";
         cout << "\n3. Inorder Depth First";
@@ -37,6 +39,11 @@ int main() {
             case '4':
                 tree.PostOrder();
                 break;
+            case 'e':
+            case 'E':
+                cout << "\nThank You";
+                return 0;
+
             default:
                 cout << "\nInvalid Choice";
         }
