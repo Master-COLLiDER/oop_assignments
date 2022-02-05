@@ -13,3 +13,5 @@ add_executable(priorityQueue src/priority_queue_driver.cpp include/lib.h include
 add_executable(doublyLinkedList src/doubly_linked_list_driver.cpp include/lib.h include/DoublyLinkedList.h)
 
 add_executable(binaryTree src/binary_tree_driver.cpp include/lib.h include/BinaryTree.h)
+
+add_executable(graph src/graph_driver.cpp include/Graph.h)
