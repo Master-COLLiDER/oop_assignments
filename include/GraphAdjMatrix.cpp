@@ -71,3 +71,38 @@ std::string GraphAdjMatrix::dfs(unsigned start) {
 }
 
 
+bool GraphAdjMatrix::isCyclicGraph() {
+
+    for (int i = 0; i < _adj.size(); ++i) {
+        if(detectCycle(i))
+            return true;
+    }
+    return false;
+}
+
+bool GraphAdjMatrix::detectCycle(unsigned start) {
+
+    std::vector<bool> visited(_adj.size(), false);
+    std::vector<int> parent(_adj.size(), -1);
+    std::vector<int> stack;
+
+    stack.push_back(start);
+    int popped;
+    while (!stack.empty()) {
+        popped = stack.back();
+        stack.pop_back();
+
+        if(visited[popped])
+            return true;
+        visited[popped] = true;
+
+        for (int V = 0; V < _adj[popped].size(); V++)
+            if (_adj[popped][V] == 1 && (V != parent[popped])) {
+                stack.push_back(V);
+                parent[V] = popped;
+            }
+    }
+    return false;
+}
+
+
