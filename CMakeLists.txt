@@ -3,6 +3,8 @@ project(OOP_Assignment)
 
 set(CMAKE_CXX_STANDARD 23)
 
+include_directories(include/)
+
 add_executable(OOP_Assignment src/main.cpp)
 
 add_executable(linearQueue src/linear_queue_driver.cpp include/lib.h include/LinearQueue.h )
@@ -15,3 +17,4 @@ add_executable(doublyLinkedList src/doubly_linked_list_driver.cpp include/lib.h 
 add_executable(binaryTree src/binary_tree_driver.cpp include/lib.h include/BinaryTree.h)
 
 add_executable(graph src/graph_driver.cpp include/GraphAdjMatrix.h include/GraphAdjMatrix.cpp)
+add_executable(sorting src/sorting_examples.cpp include/SortingAlgorithm.h include/BubbleSort.cpp include/SelectionSort.cpp include/InsertionSort.cpp include/QuickSort.cpp include/MergeSort.cpp include/Utils.cpp)
