@@ -14,4 +14,4 @@ add_executable(doublyLinkedList src/doubly_linked_list_driver.cpp include/lib.h 
 
 add_executable(binaryTree src/binary_tree_driver.cpp include/lib.h include/BinaryTree.h)
 
-add_executable(graph src/graph_driver.cpp include/Graph.h)
+add_executable(graph src/graph_driver.cpp include/GraphAdjMatrix.h include/GraphAdjMatrix.cpp)
