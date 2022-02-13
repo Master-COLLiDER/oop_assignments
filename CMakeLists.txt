@@ -18,3 +18,4 @@ add_executable(binaryTree src/binary_tree_driver.cpp include/lib.h include/Binar
 
 add_executable(graph src/graph_driver.cpp include/GraphAdjMatrix.h include/GraphAdjMatrix.cpp)
 add_executable(sorting src/sorting_examples.cpp include/SortingAlgorithm.h include/BubbleSort.cpp include/SelectionSort.cpp include/InsertionSort.cpp include/QuickSort.cpp include/MergeSort.cpp include/Utils.cpp include/RadixSort.cpp)
+add_executable(searching src/searching_test.cpp include/LinearSearch.cpp include/BinarySearch.cpp include/MergeSort.cpp)
