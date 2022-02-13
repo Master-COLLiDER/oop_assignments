@@ -17,4 +17,4 @@ add_executable(doublyLinkedList src/doubly_linked_list_driver.cpp include/lib.h 
 add_executable(binaryTree src/binary_tree_driver.cpp include/lib.h include/BinaryTree.h)
 
 add_executable(graph src/graph_driver.cpp include/GraphAdjMatrix.h include/GraphAdjMatrix.cpp)
-add_executable(sorting src/sorting_examples.cpp include/SortingAlgorithm.h include/BubbleSort.cpp include/SelectionSort.cpp include/InsertionSort.cpp include/QuickSort.cpp include/MergeSort.cpp include/Utils.cpp)
+add_executable(sorting src/sorting_examples.cpp include/SortingAlgorithm.h include/BubbleSort.cpp include/SelectionSort.cpp include/InsertionSort.cpp include/QuickSort.cpp include/MergeSort.cpp include/Utils.cpp include/RadixSort.cpp)

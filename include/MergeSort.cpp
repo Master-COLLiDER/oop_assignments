@@ -2,7 +2,7 @@
 
 namespace CSM21002 {
 
-    void merge(int array[], int left, int mid, int right) {
+    void SortingAlgorithms::merge(int array[], int left, int mid, int right) {
         auto const subArrayOne = mid - left + 1;
         auto const subArrayTwo = right - mid;
 
@@ -43,7 +43,7 @@ namespace CSM21002 {
         }
     }
 
-    void mergeSort(int array[], int begin, int end) {
+    void SortingAlgorithms::mergeSort(int array[], int begin, int end) {
         if (begin >= end)
             return;
 
@@ -52,7 +52,7 @@ namespace CSM21002 {
         mergeSort(array, mid + 1, end);
         merge(array, begin, mid, end);
     }
-    void mergeSort(int arr[] ,int n){
+    void SortingAlgorithms::mergeSort(int arr[] ,int n){
         mergeSort(arr, 0, n - 1);
     }
 }

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "SortingAlgorithm.h"
+#include <SortingAlgorithm.h>
 
 
 void printArray(int arr[] , int n) {
@@ -10,7 +10,7 @@ void printArray(int arr[] , int n) {
 
 int main() {
 
-    srand(time(nullptr));
+    srand(time(NULL));
 
     int n = 10+rand()%10;
     int arr[n];
@@ -20,8 +20,8 @@ int main() {
     }
     std::cout << "Unsorted Array: \n";
     printArray(arr, n);
-    CSM21002::BubbleSort(arr , n);
-    std::cout << "BubbleSort: \n";
+    CSM21002::SortingAlgorithms::radixSort(arr, n);
+    std::cout << "radixSort: \n";
     printArray(arr, n);
 
 

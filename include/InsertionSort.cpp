@@ -2,7 +2,7 @@
 
 namespace CSM21002 {
 
-    void insertionSort(int arr[], int n) {
+    void SortingAlgorithms::insertionSort(int arr[], int n) {
 
         int i, current, j;
         for (i = 1; i < n; i++) {

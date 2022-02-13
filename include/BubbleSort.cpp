@@ -3,14 +3,14 @@
 
 namespace CSM21002 {
 
-    void BubbleSort(int arr[], int n) {
+    void SortingAlgorithms::bubbleSort(int arr[], int n) {
         for (int i = 0; i < n - 1; i++)
             for (int j = 0; j < n - i - 1; j++)
                 if (arr[j] > arr[j + 1])
                     swap(arr[j], arr[j + 1]);
     }
 
-    void BubbleSortImproved(int arr[], int n) {
+    void SortingAlgorithms::bubbleSortImproved(int arr[], int n) {
         bool swapped;
         for (int i = 0; i < n - 1; i++) {
             swapped = false;
